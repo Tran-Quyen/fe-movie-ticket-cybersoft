@@ -1,0 +1,64 @@
+.now_title {
+  text-transform: uppercase;
+  color: $white-darker-2;
+  text-align: center;
+}
+
+.swiper-container {
+  width: 1400px !important;
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+  &-3d {
+    perspective: 800px !important;
+  }
+}
+.swiper-slide {
+  background-position: center !important;
+  background-size: cover !important;
+  width: 300px !important;
+  .container-fluid {
+    padding: 0 !important;
+    height: 400px;
+  }
+}
+.swiper-button-next,
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-prev {
+  width: 50px !important;
+  font-weight: 600 !important;
+  height: 50px !important;
+  border: 1px none transparent;
+  border-radius: 50%;
+  background-color: $primary;
+  opacity: 0.8;
+  &:focus {
+    outline: none;
+  }
+}
+.swiper-button-next:after {
+  content: ">";
+  font-size: 20px !important;
+  color: $white-darker-2;
+  font-weight: 900;
+}
+.swiper-button-prev:after {
+  content: "<";
+  font-size: 20px !important;
+  color: $white-darker-2;
+  font-weight: 900;
+}
+.movie-detail {
+  background-color: $primary;
+  padding: 5px 10px;
+  .MuiBox-root {
+    margin: 0;
+  }
+  a,
+  p {
+    color: $white-darker-2;
+    &:hover {
+      color: $white-darker-2;
+      text-decoration: none;
+    }
+  }
+}

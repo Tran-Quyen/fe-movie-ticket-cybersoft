@@ -1,0 +1,135 @@
+.signup-container {
+  width: 50%;
+  margin: 10% auto;
+  padding: 40px;
+  border-radius: 3%;
+  background: $main;
+  border: 2px solid $primary;
+  position: relative;
+  .signup-img {
+    position: absolute;
+    top: -10%;
+    left: 44%;
+    width: 100px;
+    height: 100px;
+    border: 2px solid $primary;
+    border-radius: 50%;
+    overflow: hidden;
+    line-height: 100px;
+    background-color: $white-darker-2;
+    img {
+      width: 100%;
+    }
+  }
+  .signUp-form {
+    margin-top: 3vh;
+    .form-wrapper {
+      display: flex;
+      justify-content: space-around;
+      .signup-formLeft {
+        width: 50%;
+        margin: 0 2vw;
+        .passwordCheck {
+          margin: 2vh 1vw;
+          color: $white-darker-2;
+          .checkCount,
+          .checkUppercase,
+          .checkNumber {
+            display: flex;
+            align-items: center;
+            p {
+              margin: 0 1vw;
+            }
+            &.checked {
+              color: $primary;
+            }
+          }
+        }
+      }
+      .signup-formRight {
+        width: 50%;
+      }
+    }
+
+    .input-div {
+      input {
+        color: $white-darker-2;
+        &::placeholder {
+          color: $white-darker-2;
+          font-size: 16px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+  box-shadow: 34px 34px 69px black, -34px -34px 69px black;
+
+  .errorNoti {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .mobile_noti {
+    background-color: $white;
+    text-align: center;
+    color: red;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 20px;
+    margin: 10px auto;
+    border-radius: 20px;
+  }
+}
+.signup-content {
+  .signup-btn {
+    opacity: 1 !important;
+    position: relative;
+    width: 100%;
+    background-color: $primary;
+    color: $white-darker-2;
+    font-weight: 700;
+    border-radius: 70px;
+    transition: all 0.4s;
+    font-size: 20px !important;
+    &:hover {
+      background: linear-gradient(145deg, #14d280, #18f998);
+      color: $white;
+      border: 2px solid #03ffd2;
+    }
+  }
+
+  h4 {
+    text-align: center;
+    font-size: 38px;
+    font-weight: 600;
+    color: $primary;
+    text-transform: uppercase;
+  }
+}
+@media (max-width: 767px) and (min-width: 320px) {
+  .signup-container {
+    width: 100%;
+    margin-top: 70px;
+    .signup-img {
+      left: 37vw;
+      top: -7vh;
+    }
+    .signUp-form {
+      margin-top: 0;
+      .form-wrapper {
+        display: block;
+        .signup-formLeft {
+          margin: 0;
+          width: 100%;
+        }
+        .signup-formRight {
+          width: 100%;
+        }
+      }
+      .input-div {
+        width: 100%;
+      }
+    }
+  }
+}

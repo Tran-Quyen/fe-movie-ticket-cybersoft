@@ -1,0 +1,227 @@
+.upComment {
+  background-color: $main;
+  width: 80%;
+  border-radius: 30px;
+  margin: 0 auto;
+  box-shadow: 10px 10px 10px 10px rgba(black, 0.3);
+  .MuiRating-label {
+    font-size: 40px;
+  }
+  h1 {
+    text-align: center;
+    font-weight: 500;
+    color: $white-darker-2;
+  }
+  .ratingComment {
+    margin: 0 auto;
+    width: 28%;
+  }
+  .modaSwitchlLogin {
+    width: 25%;
+    margin-left: 78%;
+    .commentBtn {
+      padding: 2vh 3vw;
+      border-radius: 50px;
+      color: $white-darker-2;
+      background-color: $primary;
+      border: none;
+      margin: 5% auto;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+.commentArea {
+  width: 60%;
+  padding: 20px;
+  margin: 0 200px;
+  background-color: $main;
+  border-color: $primary;
+  color: $white-darker-2;
+  &:focus {
+    outline: none;
+  }
+}
+
+.lackComment {
+  margin: 5vh 0;
+  p {
+    color: $white-darker-2;
+    font-size: 1.5vw;
+    text-align: center;
+  }
+}
+.commentList {
+  width: 70%;
+  background-color: $main;
+  margin: 20px auto;
+  color: $white-darker-2;
+  padding: 20px;
+  box-shadow: 10px 10px rgba(black, 0.3);
+  border: 1px solid $primary;
+  .headerComment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h5 {
+      font-weight: 600;
+      color: $white-darker-2;
+    }
+    .guest_intro {
+      display: flex;
+      align-items: center;
+      .guest_ava {
+        width: 10%;
+        background-color: $primary;
+        border-radius: 50%;
+      }
+    }
+  }
+  .changeComment {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    background-color: $main;
+    border-color: $primary;
+    &:focus {
+      outline: none;
+    }
+  }
+  .actionComment {
+    width: 10%;
+    margin-left: 90%;
+    position: relative;
+    cursor: pointer;
+    .actionCommentIcon {
+      pointer-events: none;
+      text-align: right;
+      color: $primary;
+    }
+    .actionCommentDetail {
+      position: absolute;
+      border: 1px solid $primary;
+      top: -80%;
+      border-radius: 10%;
+      left: -90%;
+      background-color: $main;
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.5s all;
+      p {
+        cursor: pointer;
+        text-align: center;
+        color: $white-darker-2;
+        margin: 3px 0;
+        padding: 5px 30px;
+        &:first-child {
+          border-bottom: 1px solid $primary;
+        }
+        &:hover {
+          background-color: $primary;
+          color: $main;
+        }
+      }
+    }
+    &.show {
+      .actionCommentDetail {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+  .changeButton {
+    margin: 2% auto;
+    width: 30%;
+    .commentUpdate {
+      background-color: $primary;
+      color: $white-darker-2;
+      padding: 10px 30px;
+      border-radius: 39px;
+      margin-right: 2%;
+      border: none;
+      &:focus {
+        outline: none;
+      }
+    }
+    .cancelUpdate {
+      background-color: transparent;
+      border: none;
+    }
+  }
+}
+.comment-mobile {
+  display: none;
+}
+
+@media (max-width: 575px) and (min-width: 320px) {
+  .lackComment {
+    p {
+      font-size: 3.5vw;
+    }
+  }
+
+  .commentList {
+    .changeButton {
+      width: 100%;
+    }
+  }
+
+  .comment-mobile {
+    display: block;
+    z-index: 1;
+    .container {
+      padding: 0;
+      .upComment {
+        width: 100%;
+        border-radius: 0;
+        .ratingComment {
+          width: fit-content;
+        }
+        .commentForm {
+          input {
+            &::placeholder {
+              font-size: 12px;
+              font-family: helvetica;
+            }
+          }
+          .modaSwitchlLogin {
+            width: 25vw;
+            margin-left: 50vw;
+            .commentBtn {
+              padding: 2vh 10vw;
+              margin: 2vh 0;
+            }
+          }
+        }
+      }
+      .commentList {
+        width: 100%;
+        hr {
+          display: none !important;
+        }
+        .headerComment {
+          display: block;
+          .guest_intro {
+            margin-bottom: 0.5vh;
+            img {
+              width: 15%;
+            }
+          }
+        }
+      }
+      .actionComment {
+        width: 20%;
+        margin-left: 80%;
+        .actionCommentDetail {
+          width: 100%;
+          font-size: 3vw;
+          left: -5vw;
+          p {
+            padding: 1vh 0;
+          }
+        }
+      }
+    }
+  }
+}

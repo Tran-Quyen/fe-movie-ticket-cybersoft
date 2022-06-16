@@ -1,0 +1,47 @@
+
+.adminLoginPage{
+    width:900px;
+    height:400px;
+    background-color:white;
+    margin:25vh;
+    padding:50px;
+    max-width: 900px!important;
+    border-radius: 69px;
+    background: linear-gradient(145deg, #0e0e4a, #101058);
+    box-shadow:  34px 34px 69px #090930, 
+                 -34px -34px 69px #151574;
+    border:none;
+    .form-group{
+        label{
+            color:white;
+            font-size:18px;
+            font-weight: 700;
+        }
+        input{
+            width: 80%;
+            &::placeholder{
+                font-size:16px;
+                font-weight: 700;
+            }
+        }
+    }
+    .btnAdminlogin{
+        position: relative;
+        left:30%;
+        font-weight: 700;
+        background-color:transparent;
+        color:#03ffd2;
+        border-radius: 70px;
+        border: 2px solid #03ffd2;
+        transition: all 0.4s;
+        &:hover{
+            background:linear-gradient(145deg, #14d280, #18f998);
+            color:white;
+        }
+    }
+    svg{
+        width:500px;
+        height: 300px;
+    }
+
+}

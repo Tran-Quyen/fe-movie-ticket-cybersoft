@@ -1,0 +1,148 @@
+ #myModal{
+    background-color: $dark-25;
+    .modal-content{
+        margin-top:15vh;
+    }
+}
+.limiter{
+    .btnADDUSER{
+        width: 50px!important;
+        height: 50px!important;
+        position: relative;
+        right:-28%;
+        margin-top:-10px;
+    }
+    .navbar-search{
+        margin:0 !important;
+        height: 10px!important;
+        input{
+            background-color:$white!important;
+            border-top-left-radius: 40px !important;
+            border-bottom-left-radius: 40px !important;
+            outline:none!important;
+            &:focus{
+                outline:none!important;
+                box-shadow: none!important;
+            }
+        }
+        .btnSearch{
+            border:none!important;
+            padding: 0 10px;
+            transition: all 0.2s;
+            border-top-right-radius: 40px !important;
+            border-bottom-right-radius: 40px !important;
+            background-color: $white-darker;
+            &:hover{
+                background: $white-darker;
+                box-shadow:  7px 7px 36px $white-darker-2, 
+                 -7px -7px 36px $white-lighter;
+            }
+        }
+    }
+    .MuiPagination-root{
+        position:relative;
+        left:70%;
+        margin:20px;
+    }
+}
+.choiceTypeUser{
+    position: relative;
+  font-family: Arial;
+    select{
+        margin-left:30px;
+        border-width: 0px;
+        border: none!important;
+        option{
+            border:none!important;
+        }
+        background: linear-gradient(145deg, #14d280, #30f09d);
+        width: 180px;
+        box-shadow:  2px 2px 3px #11b36d, 
+        -2px -2px 3px #17f293;
+        height: 40px;
+        color:$white;
+        font-size: 16px;
+        font-weight: 700;
+        border-radius: 10px;
+        padding-left: 10px;
+        &:hover{
+            box-shadow: inset 5px 5px 10px #12b971, 
+            inset -5px -5px 10px #16eb8f;
+        }
+    }
+}
+#myModalAdd{
+    background-color: $dark-25;
+    .modal-content{
+        margin-top:15vh;
+    }
+    .form-group{
+        input{
+            width: 460px;
+        }
+    }
+    select:focus{
+        outline:none
+    }
+    .btnCloseAddUser{
+        background:transparent;
+        position: relative;
+        right:5%;
+        width: 150px;
+        color:$white;
+        background: linear-gradient(145deg, #4668c9, #537bef);
+        font-weight: 700;
+        border-radius: 70px;
+        border: 2px solid #4e73df;
+        transition: all 0.2s;
+        font-size: 20px !important;
+        margin: 30px 0 10px 30px;
+        box-shadow:  2px 2px 3px #4565c4, 
+        -2px -2px 3px #5781fa;
+        &:hover {
+          background:linear-gradient(180deg, #4e73df 10%, #224abe 100%);
+          color:$white;
+          border: 2px solid #4e73df;
+          box-shadow: inset 5px 5px 7px #354e98, 
+          inset -5px -5px 7px #6798ff;
+        }
+        left:20%;
+    }
+    .SumbitAddUser{
+        @extend .btnCloseAddUser;
+        left:-5%;
+    }
+}
+.modalEditUser{
+    background-color: $dark-25;
+    .btnADDEdit{
+        background:transparent;
+        position: relative;
+        right:5%;
+        width: 150px;
+        color:$white;
+        background: linear-gradient(145deg, #4668c9, #537bef);
+        font-weight: 700;
+        border-radius: 70px;
+        border: 2px solid #4e73df;
+        transition: all 0.2s;
+        font-size: 20px !important;
+        margin: 30px 0 10px 30px;
+        box-shadow:  2px 2px 3px #4565c4, 
+        -2px -2px 3px #5781fa;
+        &:hover {
+          background:linear-gradient(180deg, #4e73df 10%, #224abe 100%);
+          color:$white;
+          border: 2px solid #4e73df;
+          box-shadow: inset 5px 5px 7px #354e98, 
+          inset -5px -5px 7px #6798ff;
+        }
+    };
+    .btnCloseEditUser{
+        @extend .btnADDEdit;
+        left:20%;
+    }
+    .form-group{
+        width: 450px!important;
+    }
+}

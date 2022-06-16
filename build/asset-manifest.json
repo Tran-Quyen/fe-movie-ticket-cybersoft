@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/FinalProjectFE33BT/static/css/main.062b2072.chunk.css",
+    "main.js": "/FinalProjectFE33BT/static/js/main.64d4e70e.chunk.js",
+    "main.js.map": "/FinalProjectFE33BT/static/js/main.64d4e70e.chunk.js.map",
+    "runtime-main.js": "/FinalProjectFE33BT/static/js/runtime-main.45c3be25.js",
+    "runtime-main.js.map": "/FinalProjectFE33BT/static/js/runtime-main.45c3be25.js.map",
+    "static/css/2.34774236.chunk.css": "/FinalProjectFE33BT/static/css/2.34774236.chunk.css",
+    "static/js/2.6c06beb8.chunk.js": "/FinalProjectFE33BT/static/js/2.6c06beb8.chunk.js",
+    "static/js/2.6c06beb8.chunk.js.map": "/FinalProjectFE33BT/static/js/2.6c06beb8.chunk.js.map",
+    "index.html": "/FinalProjectFE33BT/index.html",
+    "precache-manifest.5780f07eda23e180116723e619937470.js": "/FinalProjectFE33BT/precache-manifest.5780f07eda23e180116723e619937470.js",
+    "service-worker.js": "/FinalProjectFE33BT/service-worker.js",
+    "static/css/2.34774236.chunk.css.map": "/FinalProjectFE33BT/static/css/2.34774236.chunk.css.map",
+    "static/css/main.062b2072.chunk.css.map": "/FinalProjectFE33BT/static/css/main.062b2072.chunk.css.map",
+    "static/js/2.6c06beb8.chunk.js.LICENSE.txt": "/FinalProjectFE33BT/static/js/2.6c06beb8.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/FinalProjectFE33BT/static/media/black_panther-carousel.72546589.jpg",
+    "static/media/slick-theme.css": "/FinalProjectFE33BT/static/media/slick.f97e3bbf.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.45c3be25.js",
+    "static/css/2.34774236.chunk.css",
+    "static/js/2.6c06beb8.chunk.js",
+    "static/css/main.062b2072.chunk.css",
+    "static/js/main.64d4e70e.chunk.js"
+  ]
+}

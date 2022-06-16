@@ -1,0 +1,32 @@
+.first-navs{
+    .nav-tabs{
+        width:400px;
+        margin: 0 auto;
+        border: none!important;
+        display: flex!important;
+        transform: translateX(9%);
+        .nav-link{
+            width: 200px!important;
+            color: $white;
+            border:none!important;
+            background-color: transparent!important;
+        }
+        .active{
+            color: $red!important;
+            transform: scale(1.2);
+            font-weight: 700;
+            transition: all 0.3s;
+        }
+    }
+}
+.second-navs{
+    @extend .first-navs;
+    .nav-tabs{
+        width: 600px;
+        .nav-link{
+            width: 180px;
+            text-align: center;
+        }
+        
+    }
+}

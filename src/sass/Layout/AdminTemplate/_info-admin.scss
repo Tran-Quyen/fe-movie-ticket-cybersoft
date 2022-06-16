@@ -1,0 +1,99 @@
+.info--admin{
+    width: 900px;
+    height: 420px;
+    margin:0 auto;
+    margin-top:13vh;
+    margin-left:250px;
+    padding:30px;
+    padding-left:7vw;
+    .h1-admin{
+        text-align: center;
+        font-size: 30px;
+        font-weight: 700!important;
+    }
+    border-radius: 50px;
+    background: #969da2;
+    box-shadow:  20px 20px 60px $info-admin-box-shadow-color, 
+                -20px -20px 60px $info-admin-color-box-shadow-color-lighter;
+    .btn-update-admin{
+        border-radius: 73px; 
+        outline:none!important;
+        background: $white;
+    box-shadow:  5px 5px 10px $info-admin-btn-update-admin-box-shadow-color, 
+      -5px -5px 10px #ffffff;
+       transition: all 0.2s;
+       &:hover{
+        background: $white;
+        box-shadow: inset -5px -5px 10px $info-admin-btn-update-admin-box-shadow-color, 
+        inset 5px 5px 10px $white;
+       }
+       &:focus{
+           outline: none !important;
+       }
+    }
+    .modal{
+        padding-top:10%;
+        background-color: $dark-04;
+        input{
+            width: 450px;
+        }
+        .btn-update{
+            position: relative;
+            left:67%;
+            color:$white;
+            -webkit-appearance: none;
+            background: -webkit-gradient(to right, $green 0%, $sand 50%, $peach 100%);
+            background: linear-gradient(to right, $green 0%, $sand 50%, $peach 100%);
+            background-size: 500%;
+            box-shadow: 0 0.5rem 1rem $dark-lightness;
+            cursor: pointer;
+            border: none;
+            border-radius: 5rem;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            letter-spacing: 0.05em;
+            outline: none;
+            -webkit-tap-highlight-color: transparent;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            &:hover {
+                animation-name: gradient;
+                -webkit-animation-name: gradient;
+                animation-duration: 2s;
+                -webkit-animation-duration: s;
+                animation-iteration-count: 1;
+                -webkit-animation-iteration-count: 1;
+                animation-fill-mode: forwards;
+                -webkit-animation-fill-mode: forwards;
+              }
+        }
+        .btn-cancel{
+            position: absolute;
+            left: 97%;
+            bottom: 96% ;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 50%;
+            top: -2%;
+            opacity: 1!important;
+            @extend .btn-update;
+            span{
+                position: relative;
+                top:-6px;
+                left:1px;
+                font-size:14px;
+                font-weight: 700;
+            }
+        }
+    }
+    .comp{
+        p{
+            font-weight: 300!important;
+        }
+        span{
+            font-weight: 700!important;
+        }
+    }
+}

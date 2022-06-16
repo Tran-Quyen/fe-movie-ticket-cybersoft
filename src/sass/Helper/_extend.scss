@@ -1,0 +1,48 @@
+$green: #a2ccb6;
+$light-peach: #ffecd9;
+$peach: #ee786e;
+$red: #f03f42;
+$sand: #fceeb5;
+$white: #fff;
+$white-darker: #e3e3e3;
+$white-darker-2: #cfcfcf;
+$white-lighter: #f7f7f7;
+$white-cream: #cccccc;
+$info-admin-box-shadow-color: #80858a;
+$info-admin-color-box-shadow-color-lighter: #adb5ba;
+$info-admin-btn-update-admin-box-shadow-color: #cccccc;
+$dark-lightness: rgba(0, 0, 0, 0.15);
+$dark-04: rgba(0, 0, 0, 0.4);
+$dark-19: rgba(0, 0, 0, 0.19);
+$dark-23: rgba(0, 0, 0, 0.23);
+$dark-25: rgba(0, 0, 0, 0.25);
+$main: #17161a;
+$text-color: rgb(97, 94, 94);
+$primary: #922cc9;
+//detailMovie
+$--text-color: hsla(210, 50%, 85%, 1);
+$--shadow-color: hsla(210, 40%, 52%, 0.4);
+$--btn-color: hsl(210, 80%, 42%);
+$--bg-color: #141218;
+
+@mixin breakpoint($class) {
+  @if $class == xs {
+    @media (max-width: 767px) {
+      @content;
+    }
+  } @else if $class == sm {
+    @media (min-width: 768px) {
+      @content;
+    }
+  } @else if $class == md {
+    @media (min-width: 992px) {
+      @content;
+    }
+  } @else if $class == lg {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  } @else {
+    @warn "Breakpoint mixin supports: xs, sm, md, lg";
+  }
+}

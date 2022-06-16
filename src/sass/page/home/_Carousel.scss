@@ -1,0 +1,98 @@
+.carousel-main {
+  .carousel_detail {
+    .carousel-wrapper {
+      background-image: url("../../../Asset/Image/black_panther-carousel.jpg");
+      height: 90vh;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      .carousel-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .carousel_contentTitle {
+          padding: 25vh 5vw;
+          .first_content {
+            width: fit-content;
+            color: $white-darker-2;
+            font-size: 40px;
+            text-transform: uppercase;
+          }
+          .sec_content {
+            color: $white-darker;
+          }
+          animation: showContentTitle 1s;
+        }
+        .carousel_contentDescription {
+          width: 32%;
+          padding: 0 5%;
+          color: $white-darker;
+          animation: showContentDescript 1s;
+          .quoteLeft {
+            margin-right: 10px;
+          }
+          .quoteRight {
+            margin-left: 10px;
+          }
+          p {
+            margin-bottom: 20px;
+          }
+          .toMoviesButton {
+            color: $white-darker-2;
+            background-color: $primary;
+            padding: 10px 40px;
+            animation: buttonToMovies 1s;
+            &:hover {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+
+      .carousel_movieTitle {
+        position: absolute;
+        top: 45%;
+        left: 0;
+        max-width: 500px;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  @keyframes showContentTitle {
+    0% {
+      opacity: 0;
+      transform: translateX(30%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes showContentDescript {
+    0% {
+      opacity: 0;
+      transform: translateX(-30%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes buttonToMovies {
+    0% {
+      opacity: 0;
+      transform: translateY(-30%);
+    }
+    50% {
+      opacity: 0;
+      transform: translateY(-20%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}

@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #17161a !important;
+  max-width: 100vw;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #17161a;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #922cc9;
+}
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+.modal-backdrop {
+  display: none !important;
+}
+.desktop {
+  display: block;
+}
+.mobile {
+  display: none;
+}
+
+@media (max-width: 768px) and (min-width: 320px) {
+  .desktop {
+    display: none !important;
+  }
+  .mobile {
+    display: block;
+  }
+}

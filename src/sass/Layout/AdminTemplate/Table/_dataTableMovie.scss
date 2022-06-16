@@ -1,0 +1,70 @@
+.MovieComponent{
+    .btnAddPhim{
+    position: relative!important;
+    left:56%;
+    border-radius: 73px; 
+    outline:none!important;
+    background: #ffffff;
+    box-shadow:  5px 5px 10px #cccccc, 
+      -5px -5px 10px #ffffff;
+       transition: all 0.2s;
+       &:hover{
+            background: #ffffff;
+            box-shadow: inset -5px -5px 10px #cccccc, 
+            inset 5px 5px 10px #ffffff;
+       }
+       &:focus{
+           outline: none !important;
+       }
+    }
+}
+.editMovie{
+    .form-group{
+        input{
+            width: 450px;
+        }
+    }
+}
+#ModalAdd{
+    background-color: $dark-25;
+    .modal-content{
+        margin-top: 20vh;
+        form{
+            label{
+                font-size: 19px;
+                font-weight: 700;
+                font-family: Helvetica;
+            }
+        }
+    }
+    .btnADDMovie{
+        position: relative;
+        right:5%;
+        width: 150px;
+        color:$white;
+        background: linear-gradient(145deg, #4668c9, #537bef);
+        font-weight: 700;
+        border-radius: 70px;
+        border: 2px solid #4e73df;
+        transition: all 0.2s;
+        font-size: 20px !important;
+        margin: 30px 0 10px 30px;
+        box-shadow:  2px 2px 3px #4565c4, 
+        -2px -2px 3px #5781fa;
+        &:hover {
+          background:linear-gradient(180deg, #4e73df 10%, #224abe 100%);
+          color:$white;
+          border: 2px solid #4e73df;
+          box-shadow: inset 5px 5px 7px #354e98, 
+          inset -5px -5px 7px #6798ff;
+        }
+    }
+    select:focus{
+        outline:none
+    }
+    .btnCloseMovie{
+        @extend .btnADDMovie;
+        left:20%;
+    }
+    
+}

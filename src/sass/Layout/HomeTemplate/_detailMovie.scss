@@ -1,0 +1,557 @@
+.detail-movie {
+  .tabInfo {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .MuiTypography-root {
+    width: 1000px;
+    .MuiButtonBase-root {
+      padding: 0;
+      min-width: 88px;
+    }
+  }
+  margin-top: 6vh;
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  * {
+    box-sizing: border-box;
+  }
+  .tabs {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .detail-movie-intro-image {
+    width: 100vw;
+    height: 20vw;
+    transform: scale(2, 3);
+    -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
+    filter: blur(10px);
+  }
+  .detail-description {
+    border: none;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 40%;
+    .rating_wrapper {
+      .wrapper_circle {
+        text-align: center;
+        background-color: rgba($main, 0.8);
+        border-radius: 50%;
+        padding: 1vw 1.8vw;
+        h4 {
+          color: $primary;
+        }
+        .starIcon {
+          color: $primary;
+        }
+      }
+    }
+    .scrollToBooking {
+      padding: 10px 30px;
+      background-color: $primary;
+      color: $white-darker-2;
+      font-weight: 500;
+    }
+    .title-description {
+      color: $white-darker-2;
+    }
+    span {
+      font-size: 24px;
+    }
+  }
+  .book-btn {
+    color: $white-darker-2;
+    padding: 10px 30px;
+    background-color: $primary;
+    border: none;
+    text-transform: uppercase;
+    &:focus {
+      outline: none;
+    }
+  }
+  .img-movie {
+    padding: 0 !important;
+    max-width: 300px;
+    overflow: hidden;
+    padding: 0 !important;
+    .trailer {
+      box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3),
+        0 15px 12px rgba(0, 0, 0, 0.22);
+      position: relative;
+    }
+    &:hover {
+      .bg-trailer {
+        left: -100%;
+      }
+      .play-btn {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+    .bg-trailer {
+      background-color: rgba($primary, 0.3);
+      transition: all 300ms;
+      position: absolute;
+      top: 0;
+      left: -400%;
+      width: 300%;
+      height: 100%;
+      width: 300%;
+      transform: skewX(45deg);
+    }
+    .play-btn {
+      text-align: center;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      top: 40%;
+      left: 40%;
+      cursor: pointer;
+      border: 1px solid $white;
+      border-radius: 50%;
+      font-size: 30px;
+      width: 70px;
+      height: 70px;
+      color: $white;
+      opacity: 0;
+      transform: scale(0.8);
+      transition: all 0.2s;
+    }
+  }
+  .table {
+    margin: 40px;
+    color: white !important;
+    thead {
+      tr {
+        th {
+          border-top: none !important;
+          border-bottom: none !important;
+        }
+      }
+    }
+  }
+}
+.modal-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000000;
+  cursor: pointer;
+  opacity: 1;
+  animation-timing-function: ease-out;
+  animation-duration: 0.3s;
+  animation-name: modal-video;
+  -webkit-transition: opacity 0.3s ease-out;
+  -moz-transition: opacity 0.3s ease-out;
+  -ms-transition: opacity 0.3s ease-out;
+  -o-transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s ease-out;
+  .modal-video-body {
+    max-width: 940px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: table;
+    .modal-video-inner {
+      display: table-cell;
+      vertical-align: middle;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .modal-video-movie-wrap iframe {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    width: 70%;
+    height: 70%;
+  }
+}
+.movie-info {
+  color: white;
+  .star {
+    color: yellow;
+  }
+}
+
+.detailSec2 {
+  margin: 48px;
+}
+.MuiPaper-root {
+  background-color: transparent !important;
+}
+.MuiBox-root {
+  padding: 0 !important;
+}
+
+// .MuiTab-wrapper {
+//   align-items: stretch !important;
+// }
+.MuiButtonBase-root {
+  &:focus {
+    outline: none !important;
+  }
+  span {
+    &:focus {
+      outline: none !important;
+    }
+  }
+}
+
+.theaterIcon {
+  transform: translateX(-2px);
+  width: 92%;
+  margin: 10px 0px;
+}
+.commentForm {
+  margin: 0 auto;
+  width: 90% !important;
+  height: 100% !important;
+}
+
+.commentArea {
+  height: 70px;
+  width: 100% !important;
+  margin: 0 !important;
+}
+
+.MuiTabs-indicator {
+  background-color: $primary !important;
+}
+.MuiTabs-vertical {
+  width: 86px !important;
+  min-width: 86px;
+}
+.ant-tabs-nav {
+  .ant-tabs-tab-active {
+    color: $primary !important;
+  }
+  .ant-tabs-tab {
+    font-size: 18px;
+    padding: 10px !important;
+    color: white;
+  }
+  .ant-tabs-ink-bar-animated {
+    background-color: $primary;
+  }
+}
+.ant-tabs-bar {
+  width: 54vw !important;
+  max-width: 54vw !important;
+  border-bottom: 0px !important;
+}
+.ant-tabs-tab-prev-icon {
+  i {
+    color: white;
+    font-size: 14px !important;
+  }
+}
+.ant-tabs-tab-next-icon {
+  @extend .ant-tabs-tab-prev-icon;
+}
+.detailMovie--tenRap {
+  color: white;
+  font-size: 30px;
+  padding-left: 10px;
+  font-weight: 700;
+  font-family: Helvetica;
+}
+
+.MuiTabs-scrollButtons {
+  svg {
+    color: white !important;
+    height: 1.25em;
+  }
+}
+.deleteButton {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin-left: 85%;
+  width: 15%;
+  z-index: 3;
+  p {
+    margin: 0;
+    transform: translateX(-200%);
+    transition: 0.5s all;
+    color: white;
+    background-color: red;
+    border-radius: 10px;
+    padding: 2px 10px;
+    z-index: 0;
+    cursor: pointer;
+  }
+  &:hover {
+    svg {
+      transform: rotate(45deg);
+    }
+    p {
+      transform: translateX(0);
+    }
+  }
+}
+.deleteIcon {
+  color: red;
+  font-weight: 400;
+  font-size: 20px;
+  width: 100%;
+  transition: 0.5s all;
+  transform: rotate(-45deg);
+  z-index: 0;
+}
+.btnDayofMovie {
+  position: relative;
+  padding: 10px 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: Helvetica;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 25px;
+  background-color: transparent !important;
+  a {
+    background-color: transparent !important;
+    color: $primary;
+    &:hover {
+      color: #f3558e !important;
+    }
+  }
+}
+@media (max-width: 575px) and (min-width: 320px) {
+  .ant-tabs-content {
+    width: 79vw !important;
+    max-width: 80vw !important;
+  }
+  .tabInfo {
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom: 1vh !important;
+    .play-btn {
+      top: 50% !important;
+    }
+    .img-movie {
+      margin: 0 auto;
+    }
+    .col-sm-8 {
+      margin-bottom: 3vh;
+    }
+  }
+  .detail-movie {
+    margin-top: 6vh;
+    .table {
+      margin: 0 !important;
+    }
+    .detail-description {
+      top: 5% !important;
+      .scrollToBooking {
+        display: none;
+      }
+    }
+    .rating_wrapper {
+      .wrapper_circle {
+        padding: 0 !important;
+        width: 15vh;
+        height: 15vh;
+        line-height: 5vh;
+        p {
+          margin: 0 !important;
+          font-size: 0.85rem;
+        }
+      }
+      .count-rating-people {
+        font-size: 0.75rem;
+        text-align: center;
+      }
+    }
+  }
+  .tabs {
+    width: 100% !important;
+    margin: 0 auto;
+    .MuiTypography-root {
+      max-width: 100vw !important;
+      .ant-tabs-content {
+        width: 79vw !important;
+        max-width: 80vw !important;
+      }
+    }
+  }
+  .MuiTabs-vertical {
+    width: 60px !important;
+    min-width: 60px;
+  }
+  .MuiTypography-root {
+    width: 94% !important;
+    max-width: 100% !important;
+    .MuiButtonBase-root {
+      padding: 0;
+      min-width: 70px !important;
+    }
+  }
+  .MuiPaper-root {
+    .detailSec2 {
+      display: none !important;
+    }
+  }
+  .ant-tabs-bar {
+    width: 77vw !important;
+    max-width: 77vw !important;
+    border-bottom: 0px !important;
+  }
+  .theaterIcon {
+    transform: translateX(-2px);
+    width: 70%;
+    margin: 20px 10px 20px 0px;
+  }
+  .detail-movie-intro {
+    .lazy-load-image-background {
+      margin-top: 3.5vh;
+      &:focus {
+        height: 369px;
+      }
+      position: fixed;
+      z-index: -1;
+      .detail-movie-intro-image {
+        width: 100vw !important;
+      }
+    }
+  }
+  .MuiTabs-flexContainerVertical {
+    overflow-x: hidden;
+  }
+  .modal-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000000;
+    cursor: pointer;
+    opacity: 1;
+    animation-timing-function: ease-out;
+    animation-duration: 0.3s;
+    animation-name: modal-video;
+    -webkit-transition: opacity 0.3s ease-out;
+    -moz-transition: opacity 0.3s ease-out;
+    -ms-transition: opacity 0.3s ease-out;
+    -o-transition: opacity 0.3s ease-out;
+    transition: opacity 0.3s ease-out;
+    .modal-video-body {
+      max-width: 940px;
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      display: table;
+      .modal-video-inner {
+        display: table-cell;
+        vertical-align: middle;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .modal-video-close-btn {
+      background: transparent;
+      overflow: hidden;
+      border: none;
+      &::before {
+        content: "";
+        transform: rotate(45deg);
+        position: absolute;
+        height: 2px;
+        width: 7%;
+        top: 15%;
+        left: 90%;
+        margin-top: -1px;
+        background: #fff;
+        border-radius: 5px;
+        margin-top: -6px;
+      }
+      &::after {
+        transform: rotate(-45deg);
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 7%;
+        top: 15%;
+        left: 90%;
+        margin-top: -1px;
+        background: #fff;
+        border-radius: 5px;
+        margin-top: -6px;
+      }
+    }
+    .modal-video-movie-wrap iframe {
+      position: initial;
+      width: 100vw !important;
+      height: 30vh !important;
+      top: 15%;
+      left: 15%;
+      width: 70%;
+      height: 70%;
+    }
+  }
+  .detail-movie-no-choose-noti {
+    font-size: 17px;
+    margin: 3vh;
+  }
+}
+.detail-movie-no-choose-noti {
+  color: white;
+  font-family: Helvetica;
+  margin: 4vh;
+}
+.detail-movie-schedule-error {
+  @extend .detail-movie-no-choose-noti;
+}
+@media (max-width: 768px) and (min-width: 576px) {
+  .detail-movie {
+    .img-movie {
+      overflow: hidden;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+    .tabInfo {
+      width: 100%;
+      justify-content: space-between;
+    }
+    .detail-description {
+      margin: 0;
+    }
+    .tabs {
+      width: 100%;
+    }
+    .col-sm-8 {
+      flex: none !important;
+      max-width: none !important;
+    }
+    .col-sm-3 {
+      flex: none !important;
+    }
+    .container {
+      width: 100% !important;
+      max-width: none !important;
+    }
+    .detail-description {
+      .scrollToBooking {
+        display: none;
+      }
+    }
+  }
+
+  .upComment {
+    .ratingComment {
+      width: 35% !important;
+    }
+  }
+}

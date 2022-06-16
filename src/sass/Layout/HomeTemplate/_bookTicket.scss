@@ -1,0 +1,718 @@
+.bookTicket_container {
+  margin: 10vh auto;
+  display: flex;
+  justify-content: space-between;
+  .booking-movie {
+    background-color: $main;
+    max-width: 1200px;
+    padding-top: 30px;
+    position: relative;
+    margin: 0 auto;
+    height: 100%;
+    .countdown {
+      position: absolute;
+      left: 82%;
+
+      span {
+        color: $white;
+      }
+    }
+    .timeLabel {
+      color: $white;
+      font-size: 1vw;
+      margin-bottom: 0;
+    }
+    .timeCount {
+      font-size: 2.5vw;
+      color: $primary;
+      text-shadow: 0 0 10px $primary, 0 0 40px $primary, 0 0 80px $primary;
+      text-align: center;
+    }
+    .tenPhim {
+      font-size: 30px !important;
+      font-weight: 900 !important;
+      font-family: Helvetica;
+      color: $white-darker-2;
+      width: 70%;
+    }
+    .thongTinSuatChieu {
+      color: $white-darker-2;
+      font-size: 1.5vw;
+    }
+    .seat-choosing {
+      .chairList {
+        max-width: 750px;
+        margin: 5vh auto;
+      }
+      .monitor {
+        span {
+          position: relative;
+          top: 17px;
+          font-size: 16px;
+          font-weight: 700;
+          color: whitesmoke;
+        }
+        background-color: #f3558e;
+        width: 100%;
+        margin: 20px auto;
+        margin-bottom: 30px;
+        color: $white;
+        border-radius: 50%/ 85% 85% 0 0;
+        height: 20px;
+        padding-top: 10px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        -webkit-box-shadow: 5px 15px 50px 2px #f3558e;
+        box-shadow: 5px 15px 50px 2px #f3558e;
+      }
+      .chose {
+        background-color: #f3558e !important;
+        color: $white !important;
+        font-weight: 700 !important;
+        font-size: 14px;
+      }
+
+      .chair {
+        background-color: black;
+        opacity: 1;
+        color: transparent;
+        margin: 0.2vw;
+        line-height: 40px;
+        text-align: center;
+        width: 2.5vw;
+        height: 5vh;
+        font-weight: 300;
+        font-size: 14px;
+        border-radius: 18%;
+        border: 1px solid black;
+        cursor: pointer;
+      }
+      .booked {
+        background-color: grey !important;
+        color: $white !important;
+      }
+    }
+    .seat--info {
+      width: 80%;
+      margin: 5% auto;
+      transform: translateX(-15px);
+      p {
+        color: white;
+        font-weight: 700;
+        font-size: 14px;
+      }
+      .normalSeat {
+        .seat--info_detail {
+          margin-right: 10px;
+          width: 20px;
+          height: 20px;
+          background-color: #922cc9;
+        }
+      }
+      .vipSeat {
+        .seat--info_detail {
+          margin-right: 10px;
+          width: 20px;
+          height: 20px;
+          background-color: #cfcfcf;
+        }
+      }
+    }
+  }
+  .booking-ticket {
+    .img-movie-booking {
+      margin-left: 35%;
+      img {
+        width: 140px;
+        height: 200px;
+      }
+    }
+    &:hover {
+      border-radius: 20px;
+      background: #17161a;
+      box-shadow: inset 20px 20px 43px #0e0e10, inset -20px -20px 43px #201e24;
+    }
+    border-radius: 20px;
+    transition: all 0.05s;
+    .seat-check {
+      h5 {
+        font-size: 18px;
+        font-weight: 300;
+        color: white;
+      }
+      span {
+        font-weight: 700;
+      }
+    }
+    .btnCloseErrForm {
+      margin: 0 auto;
+    }
+    .errRender {
+      .maxErrNoti {
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+        img {
+          width: 35%;
+          margin: 5% auto;
+        }
+      }
+    }
+    .modal-content {
+      margin-top: 235px !important;
+    }
+    .payStyle_container {
+      .payStyles {
+        margin-top: 150px !important;
+        img {
+          width: 50%;
+          margin-bottom: 5vh;
+        }
+      }
+      .payStyle_pay {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        p {
+          font-size: 18px;
+          width: 80%;
+          margin: 10px auto;
+          color: white;
+        }
+        img {
+          width: 10vw !important;
+          height: 10vw !important;
+          margin: 0;
+        }
+      }
+    }
+    .errNoti {
+      text-align: center;
+      width: 80%;
+      margin: 0 auto;
+      img {
+        width: 35%;
+        margin: 5% auto;
+      }
+    }
+    .info-ticket {
+      h5 {
+        font-size: 20px;
+        font-weight: 300;
+        color: white;
+        &:nth-child(3) {
+          font-weight: 700;
+        }
+      }
+      span {
+        color: white;
+        font-size: 20px;
+        font-weight: 700;
+      }
+    }
+    p {
+      color: black;
+      font-size: 15px;
+    }
+    .checkType {
+      h5 {
+        color: white;
+        font-size: 1.4vw;
+        font-weight: 700;
+      }
+      .container {
+        margin-top: 20px;
+        margin-bottom: 5px;
+        .payStyle {
+          img {
+            width: 40px !important;
+            height: 40px !important;
+            margin-left: 20px;
+          }
+          p {
+            color: white;
+            margin: 15px 20px;
+            font-size: 1vw;
+          }
+        }
+      }
+    }
+    .total {
+      text-align: center;
+      padding: 10px 30px;
+      padding-top: 1.5vh !important;
+      h4 {
+        font-size: 21px;
+        font-weight: 300;
+        font-family: Helvetica;
+        color: white;
+      }
+      span {
+        font-weight: 700;
+        font-size: 25px !important;
+      }
+    }
+    .btnBook {
+      width: 100%;
+      margin: 10px 0;
+      padding: 20px 30px;
+      margin-bottom: 0;
+      -webkit-appearance: none;
+      background: -webkit-gradient(to right, $green 0%, $sand 50%, $peach 100%);
+      background: linear-gradient(to right, $green 0%, $sand 50%, $peach 100%);
+      background-size: 500%;
+      border: none;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+      color: $white;
+      cursor: pointer;
+      font-weight: 700 !important;
+      font: 1em Raleway, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      letter-spacing: 0.05em;
+      transition: all 0.3s;
+      outline: none;
+      -webkit-tap-highlight-color: transparent;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      &:hover {
+        animation-name: gradient;
+        -webkit-animation-name: gradient;
+        animation-duration: 2s;
+        -webkit-animation-duration: s;
+        animation-iteration-count: 1;
+        -webkit-animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
+      }
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      100% {
+        background-position: 100%;
+      }
+    }
+  }
+
+  .modalContent_wrapper {
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(black, 0.8);
+    .modalContent {
+      top: 40%;
+      left: 25%;
+      z-index: 9999;
+      position: fixed;
+      background-color: $white;
+      padding: 40px;
+      color: $main;
+      h5 {
+        margin-bottom: 20px;
+      }
+      .close-btn {
+        margin-left: 90%;
+      }
+    }
+  }
+}
+
+.pickedNoti-wrapper {
+  background-color: rgba(black, 0.8);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  .cancelNoti {
+    font-size: 2.5vw;
+    color: $white-darker-2;
+    cursor: pointer;
+    margin: 1vh 1vw;
+  }
+  .pickedNoti {
+    background-color: white;
+    margin: 30vh auto;
+    width: 30%;
+    color: black;
+    text-align: center;
+    padding: 10px 20px;
+    animation: showNoti 0.5s;
+    .pickedNoti-img {
+      img {
+        width: 40%;
+      }
+      margin-bottom: 10px;
+    }
+    .pickedNoti-content {
+      p {
+        font-size: 1.5vw;
+      }
+    }
+  }
+}
+@keyframes showNoti {
+  0% {
+    transform: translateY(-20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@media (max-width: 600px) and (min-width: 320px) {
+  .bookTicket_container {
+    margin-top: 1vh;
+    margin-bottom: 0;
+    .booking-movie {
+      .seat-choosing {
+        .chairList {
+          padding-left: 3vw;
+          max-width: 580px;
+          .chair {
+            width: 5.3vw;
+            height: 4.5vh;
+            font-size: 8px;
+            line-height: 4vh;
+          }
+        }
+      }
+      .tenPhim {
+        font-size: 20px !important;
+        font-weight: 900 !important;
+        font-family: Helvetica;
+      }
+      .thongTinSuatChieu {
+        font-size: 17px;
+      }
+      .timeLabel {
+        font-size: 3.5vw;
+      }
+      .timeCount {
+        font-size: 6vw;
+      }
+    }
+    .booking-ticket {
+      position: fixed;
+      border-radius: 0;
+      z-index: 2001;
+      top: 0;
+      left: 0;
+      width: 100% !important;
+      height: 100%;
+      background-color: $main;
+      transition: all 0.5s;
+      transform: translateY(100%);
+      &.col-sm-4 {
+        flex: none !important;
+        max-width: none !important;
+      }
+      &:hover {
+        border-radius: 0;
+      }
+      &.show {
+        transform: translateY(0);
+      }
+      .total {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        .backButton {
+          color: $white-darker-2;
+          cursor: pointer;
+        }
+        h4 {
+          font-size: 5vw;
+        }
+        span {
+          font-size: 5vw !important;
+        }
+      }
+    }
+    .booking-ticket {
+      .checkType {
+        .container {
+          .payStyle {
+            p {
+              font-size: 2.62vw;
+            }
+          }
+        }
+        h5 {
+          font-size: 4vw;
+        }
+      }
+      .payStyle_container .payStyle_pay {
+        img {
+          width: 30vw !important;
+          height: 30vw !important;
+        }
+        p {
+          font-size: 4vw;
+        }
+      }
+    }
+    .modalContent_wrapper {
+      .modalContent {
+        top: 40%;
+        left: 0;
+        background-color: $white;
+        width: 100%;
+        padding: 2vh 40px;
+        color: $main;
+        h5 {
+          margin-bottom: 20px;
+        }
+        .close-btn {
+          margin-left: 90%;
+        }
+      }
+    }
+  }
+
+  .ticketFooter-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: $main;
+    border-top: 1px solid $primary;
+    color: $white-darker-2;
+    .seat_mobile {
+      padding: 0 20px;
+      max-width: 60%;
+      font-weight: 700;
+    }
+    .pay_button {
+      height: 100%;
+      width: 40%;
+      background-color: $primary;
+      color: $white-darker-2;
+      font-size: 20px;
+      text-transform: uppercase;
+      font-weight: 500;
+      text-align: center;
+      padding: 7vw;
+      transition: all 0.5s;
+      &:hover {
+        text-decoration: none;
+        background-color: $white-darker-2;
+        color: $main;
+      }
+    }
+  }
+  .pickedNoti-wrapper {
+    .cancelNoti {
+      font-size: 3.5vw;
+    }
+    .pickedNoti {
+      background-color: white;
+      margin: 30vh auto;
+      width: 90%;
+      color: black;
+      text-align: center;
+      padding: 10px 20px;
+      animation: showNoti 0.5s;
+      .pickedNoti-img {
+        img {
+          width: 30%;
+        }
+        margin-bottom: 20px;
+      }
+      .pickedNoti-content {
+        p {
+          font-size: 4.5vw;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767px) and (min-width: 601px) {
+  .bookTicket_container {
+    margin-top: 1vh;
+    margin-bottom: 0;
+    .booking-movie {
+      .seat-choosing {
+        .chairList {
+          margin: 0 auto;
+          width: 75%;
+          .chair {
+            width: 4.1vw;
+            height: 4.5vh;
+            font-size: 8px;
+            line-height: 4vh;
+          }
+        }
+      }
+      .tenPhim {
+        font-size: 20px !important;
+        font-weight: 900 !important;
+        font-family: Helvetica;
+      }
+      .thongTinSuatChieu {
+        font-size: 17px;
+      }
+      .timeLabel {
+        font-size: 3vw;
+      }
+      .timeCount {
+        font-size: 4vw;
+      }
+    }
+    .booking-ticket {
+      position: fixed;
+      border-radius: 0;
+      overflow: auto;
+      z-index: 2001;
+      top: 0;
+      left: 0;
+      width: 100% !important;
+      height: 100%;
+      background-color: $main;
+      transition: all 0.5s;
+      transform: translateY(100%);
+      &.col-sm-4 {
+        flex: none !important;
+        max-width: none !important;
+      }
+      &:hover {
+        border-radius: 0;
+      }
+      &.show {
+        transform: translateY(0);
+      }
+      .total {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        .backButton {
+          color: $white-darker-2;
+          cursor: pointer;
+        }
+        h4 {
+          font-size: 5vw;
+        }
+        span {
+          font-size: 5vw !important;
+        }
+      }
+    }
+    .booking-ticket {
+      .checkType {
+        .container {
+          .payStyle {
+            p {
+              font-size: 2.62vw;
+            }
+          }
+        }
+        h5 {
+          font-size: 4vw;
+        }
+      }
+      .payStyle_container .payStyle_pay {
+        img {
+          width: 30vw !important;
+          height: 30vw !important;
+        }
+        p {
+          font-size: 4vw;
+        }
+      }
+    }
+    .modalContent_wrapper {
+      .modalContent {
+        top: 40%;
+        left: 0;
+        z-index: 9999;
+        position: fixed;
+        background-color: $white;
+        width: 100%;
+        padding: 2vh 40px;
+        color: $main;
+        h5 {
+          margin-bottom: 20px;
+        }
+        .close-btn {
+          margin-left: 90%;
+        }
+      }
+    }
+  }
+
+  .ticketFooter-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: $main;
+    border-top: 1px solid $primary;
+    color: $white-darker-2;
+    .seat_mobile {
+      padding: 0 20px;
+      max-width: 60%;
+      font-weight: 700;
+    }
+    .pay_button {
+      height: 100%;
+      width: 40%;
+      background-color: $primary;
+      color: $white-darker-2;
+      font-size: 20px;
+      text-transform: uppercase;
+      font-weight: 500;
+      text-align: center;
+      padding: 7vw;
+      transition: all 0.5s;
+      &:hover {
+        text-decoration: none;
+        background-color: $white-darker-2;
+        color: $main;
+      }
+    }
+  }
+  .pickedNoti-wrapper {
+    .cancelNoti {
+      font-size: 3.5vw;
+    }
+    .pickedNoti {
+      background-color: white;
+      margin: 30vh auto;
+      width: 90%;
+      color: black;
+      text-align: center;
+      padding: 10px 20px;
+      animation: showNoti 0.5s;
+      .pickedNoti-img {
+        img {
+          width: 30%;
+        }
+        margin-bottom: 20px;
+      }
+      .pickedNoti-content {
+        p {
+          font-size: 4.5vw;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+.home-tool {
+  width: 65%;
+  padding: 15px;
+  margin: -30px auto;
+  display: flex;
+  background-color: $main;
+  border: 1px solid $primary;
+  border-radius: 0.75rem;
+  animation: dropTool 1s;
+  .form-control {
+    width: 100%;
+    border: none !important;
+    background-color: $main;
+    color: $white-darker-2;
+    &:focus {
+      background-color: $main;
+      color: $white-darker-2;
+    }
+  }
+  .selectChoice {
+    font-size: 16px;
+    max-width: 13vw;
+    height: 40px;
+    &:focus {
+      border-color: none;
+      box-shadow: none;
+    }
+  }
+  .btn-datve {
+    margin-left: 10px;
+    width: 10vw;
+    padding: 10px;
+    border-radius: 0.75rem;
+    font-size: 1vw;
+    border: none;
+    background-color: $primary;
+    text-align: center;
+    color: $white-darker-2;
+    box-shadow: 0 1px 3px $primary, 0 1px 2px $primary !important;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    &:hover {
+      text-decoration: none;
+    }
+    &:focus {
+      outline: none !important;
+    }
+  }
+}
+@keyframes dropTool {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
