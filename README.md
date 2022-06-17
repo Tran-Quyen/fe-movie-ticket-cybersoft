@@ -1,3 +1,6 @@
+# Getting Started with Create React App
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 #### ❄️Author: Quyen Dang
 
@@ -6,8 +9,6 @@
 #### ✨Phone: (+84)337846412
 
 #### 😄 Magic Number: 142857 (x 1,2,3,4,5,6,7) (Secret Egypt)
-
-# This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
